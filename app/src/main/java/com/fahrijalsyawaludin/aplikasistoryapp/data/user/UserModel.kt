@@ -1,4 +1,7 @@
 package com.fahrijalsyawaludin.aplikasistoryapp.data.user
 
-class UserModel {
-}
+data class UserModel(
+    val email: String,
+    val token: String,
+    val isLogin: Boolean = false
+)
