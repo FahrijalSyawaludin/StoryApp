@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Aplikasi Story App</string>
+    <string name="signup">Daftar</string>
+    <string name="login">Masuk</string>
+    <string name="message_welcome_page">Selamat datang, para penggemar Batman! Temukan cerita yang menyentuh tentang coding melalui kisah seru dan penuh emosi di aplikasi ini.</string>
+    <string name="title_welcome_page">Selamat Datang di Cerita Anak Programmer!</string>
+    <string name="title_signup_page">Jangan lupa tambahkan data diri kamu terlebih dahulu!</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="message_login_page">Ayo, login dulu yuk!</string>
+    <string name="title_login_page">Sudah siap menjelajahi Cerita Anak Programmer</string>
+    <string name="name">Nama</string>
+    <string name="message_main_page">Selamat Datang di Aplikasi Story App.</string>
+    <string name="greeting">Halo %1$s,</string>
+    <string name="logout">Keluar</string>
+    <string name="sd_name">Nama</string>
+    <string name="desc">Deskripsi</string>
+    <string name="Gallery">Galeri</string>
+    <string name="Camera">Kamera</string>
+    <string name="Upload">Unggah</string>
+    <string name="empty_image_warning">Silakan masukkan berkas gambar terlebih dahulu.</string>
+    <string name="title_activity_detail_story">DetailStoryActivity</string>
+</resources>

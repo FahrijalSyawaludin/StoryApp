@@ -6,7 +6,7 @@ import android.content.pm.PackageManager
 import android.net.Uri
 import android.os.Bundle
 import android.util.Log
-import android.view.*
+import android.view.View
 import android.widget.Toast
 import androidx.activity.result.PickVisualMediaRequest
 import androidx.activity.result.contract.ActivityResultContracts
@@ -14,9 +14,7 @@ import androidx.activity.viewModels
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
-import androidx.core.net.toUri
 import com.fahrijalsyawaludin.aplikasistoryapp.R
-import com.fahrijalsyawaludin.aplikasistoryapp.data.user.UserModel
 import com.fahrijalsyawaludin.aplikasistoryapp.databinding.ActivityAddstoryBinding
 import com.fahrijalsyawaludin.aplikasistoryapp.getImageUri
 import com.fahrijalsyawaludin.aplikasistoryapp.main.MainActivity
@@ -83,6 +81,7 @@ class AddStoryActivity : AppCompatActivity() {
                         intent.flags =
                             Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
                         startActivity(intent)
+                        finish()
                     }
                     create()
                     show()

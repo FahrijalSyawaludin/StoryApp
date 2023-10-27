@@ -16,8 +16,7 @@ import java.io.File
 import java.io.FileOutputStream
 import java.io.InputStream
 import java.text.SimpleDateFormat
-import java.util.Date
-import java.util.Locale
+import java.util.*
 
 private const val MAXIMAL_SIZE = 1000000 //1 MB
 private const val FILENAME_FORMAT = "yyyyMMdd_HHmmss"

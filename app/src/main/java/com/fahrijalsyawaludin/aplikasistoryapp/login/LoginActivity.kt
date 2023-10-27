@@ -41,8 +41,8 @@ class LoginActivity : AppCompatActivity() {
 
                 viewModel.saveSession(UserModel(email, it.loginResult?.token!!))
                 AlertDialog.Builder(this).apply {
-                    setTitle("Yeah!")
-                    setMessage("Anda berhasil login. Sudah tidak sabar untuk belajar ya?")
+                    setTitle("Alhamdullilah!")
+                    setMessage("Anda berhasil login.")
                     setPositiveButton("Lanjut") { _, _ ->
                         val intent = Intent(context, MainActivity::class.java)
                         intent.flags =

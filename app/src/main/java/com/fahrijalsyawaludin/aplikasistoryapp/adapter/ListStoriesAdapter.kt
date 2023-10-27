@@ -13,7 +13,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.fahrijalsyawaludin.aplikasistoryapp.R
 import com.fahrijalsyawaludin.aplikasistoryapp.api.ListStoryItem
-import com.fahrijalsyawaludin.aplikasistoryapp.main.DetailMainActivity
+import com.fahrijalsyawaludin.aplikasistoryapp.detailmain.DetailMainActivity
 
 class ListStoriesAdapter(private val listStories: ArrayList<ListStoryItem>) :
     RecyclerView.Adapter<ListStoriesAdapter.ListViewHolder>() {
@@ -38,14 +38,14 @@ class ListStoriesAdapter(private val listStories: ArrayList<ListStoryItem>) :
         fun bind(stories: ListStoryItem) {
             Glide.with(itemView.context)
                 .load(stories.photoUrl)
-                .circleCrop()
+                .centerCrop()
                 .into(imgPhoto)
             tvName.text = stories.name
             tvDescription.text = stories.description
 
             itemView.setOnClickListener {
                 val intent = Intent(itemView.context, DetailMainActivity::class.java)
-                intent.putExtra("Story", stories)
+                intent.putExtra("story", stories)
 
                 val optionsCompat: ActivityOptionsCompat =
                     ActivityOptionsCompat.makeSceneTransitionAnimation(

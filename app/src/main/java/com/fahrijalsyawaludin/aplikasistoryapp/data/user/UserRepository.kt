@@ -1,10 +1,7 @@
 package com.fahrijalsyawaludin.aplikasistoryapp.data.user
 
-import androidx.lifecycle.LiveData
 import androidx.lifecycle.liveData
 import com.fahrijalsyawaludin.aplikasistoryapp.api.*
-import com.fahrijalsyawaludin.aplikasistoryapp.data.user.UserModel
-import com.fahrijalsyawaludin.aplikasistoryapp.data.user.UserPreference
 import com.google.gson.Gson
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.first

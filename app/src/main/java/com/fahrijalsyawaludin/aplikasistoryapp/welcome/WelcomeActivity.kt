@@ -14,7 +14,6 @@ import com.fahrijalsyawaludin.aplikasistoryapp.databinding.ActivityWelcomeBindin
 import com.fahrijalsyawaludin.aplikasistoryapp.login.LoginActivity
 import com.fahrijalsyawaludin.aplikasistoryapp.main.MainActivity
 import com.fahrijalsyawaludin.aplikasistoryapp.signup.SignupActivity
-import com.fahrijalsyawaludin.aplikasistoryapp.signup.SignupViewModel
 import com.fahrijalsyawaludin.aplikasistoryapp.view.ViewModelFactory
 
 class WelcomeActivity : AppCompatActivity() {

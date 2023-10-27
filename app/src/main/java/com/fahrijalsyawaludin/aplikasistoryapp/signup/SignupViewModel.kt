@@ -1,6 +1,5 @@
 package com.fahrijalsyawaludin.aplikasistoryapp.signup
 
-import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
