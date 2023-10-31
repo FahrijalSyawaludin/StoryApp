@@ -96,4 +96,8 @@ class UserRepository private constructor(
                 instance ?: UserRepository(userPreference, api)
             }.also { instance = it }
     }
+
+    suspend fun getLocationStory(): List<ListStoryItem?>?{
+        return api.getStoriesWithLocation("Bearer " + getToken()).listStory
+    }
 }

@@ -19,5 +19,9 @@
     <string name="Camera">Kamera</string>
     <string name="Upload">Unggah</string>
     <string name="empty_image_warning">Silakan masukkan berkas gambar terlebih dahulu.</string>
-    <string name="title_activity_detail_story">DetailStoryActivity</string>
+    <string name="normal_type">Normal</string>
+    <string name="satellite_type">Satelit</string>
+    <string name="terrain_type">Tampilan Terain</string>
+    <string name="hybrid_type">Hybrid</string>
+
 </resources>

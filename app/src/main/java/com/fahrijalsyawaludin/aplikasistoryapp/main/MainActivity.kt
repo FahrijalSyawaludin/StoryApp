@@ -15,6 +15,7 @@ import com.fahrijalsyawaludin.aplikasistoryapp.adapter.ListStoriesAdapter
 import com.fahrijalsyawaludin.aplikasistoryapp.addstory.AddStoryActivity
 import com.fahrijalsyawaludin.aplikasistoryapp.api.ListStoryItem
 import com.fahrijalsyawaludin.aplikasistoryapp.databinding.ActivityMainBinding
+import com.fahrijalsyawaludin.aplikasistoryapp.maps.MapsActivity
 import com.fahrijalsyawaludin.aplikasistoryapp.view.ViewModelFactory
 import com.fahrijalsyawaludin.aplikasistoryapp.welcome.WelcomeActivity
 
@@ -106,6 +107,10 @@ class MainActivity : AppCompatActivity() {
 
             R.id.menu_refresh -> {
                 viewModel.getAllStories(viewModel.getSession().token!!)
+                return true
+            }
+            R.id.menu_maps -> {
+                startActivity(Intent(this, MapsActivity::class.java))
                 return true
             }
 

@@ -78,8 +78,7 @@ class AddStoryActivity : AppCompatActivity() {
                     setMessage("Makasih udah Upload")
                     setPositiveButton("Gass") { _, _ ->
                         val intent = Intent(context, MainActivity::class.java)
-                        intent.flags =
-                            Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+                        intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
                         startActivity(intent)
                         finish()
                     }
@@ -87,14 +86,25 @@ class AddStoryActivity : AppCompatActivity() {
                     show()
                 }
             } else {
-                AlertDialog.Builder(this).apply {
-                    setTitle("Oops!")
-                    setMessage(it.message)
-                    setPositiveButton("OK") { _, _ ->
+                if (it.message == getString(R.string.empty_image_warning)) {
+                    if (binding.descriptionEditText.text!!.isEmpty()) {
+                        binding.descriptionEditText.error = "Harus isi deskripsi"
+                    } else {
+                        val intent = Intent(this, MainActivity::class.java)
+                        intent.flags =
+                            Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+                        startActivity(intent)
                         finish()
                     }
-                    create()
-                    show()
+                } else {
+                    AlertDialog.Builder(this).apply {
+                        setTitle("Waduhh!")
+                        setMessage(it.message)
+                        setPositiveButton("OK") { _, _ ->
+                        }
+                        create()
+                        show()
+                    }
                 }
             }
         }
